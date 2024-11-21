@@ -3,6 +3,9 @@
 #include<QString>
 #include<QSqlQuery>
 #include<QSqlQueryModel>
+#include <QString>
+#include <QStandardItemModel>
+#include <QPrinter>
 
 class commande
 {
@@ -43,6 +46,18 @@ public:
     bool recherche(int);
 
     bool modifier(int  , int  , int , int , QString  , QString , QString );
+    void pdf_downloader(int id);
+    QString coomandecount();
+    QString count();
+    QVector<QString> getAndSortPrenomsAlphabetically();
+    QSqlQueryModel * trie_tab();
+
+    QSqlQueryModel* trieButton(const QString& column, bool ordreCroissant);
+
+    void pdf_downloader();
+    void generatePdfReport();
+    void on_PDF_clicked(); // Ajoute cette ligne
+
 
 
    /* float prix_tapis,prix_couette;*/

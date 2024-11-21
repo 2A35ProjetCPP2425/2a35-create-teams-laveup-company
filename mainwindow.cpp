@@ -1,12 +1,42 @@
 #include "mainwindow.h"
+#include "achat.h"
+#include "qstandarditemmodel.h"
 #include "ui_mainwindow.h"
 #include "commande.h"
 #include<QMessageBox>
+#include<QDesktopServices>
+#include<QSqlQueryModel>
+#include <QSqlQuery>
+#include <QSqlError>
+#include <QDebug>
+#include <QString>
+#include <QStandardItem>
+#include <QStandardItemModel>
+#include <QLabel>
+
+#include <QFileDialog>
+#include <QPrinter>
+#include <QPainter>
+#include <QMessageBox>
+#include <QSqlQuery>
+#include <QSqlError>
+
+#include "commande.h"
+#include <QPrinter>
+#include <QTextDocument>
+#include <QSqlQuery>
+#include <QSqlError>
+#include <QDebug>
+#include <QPixmap>
+#include <QPdfWriter>
+
 MainWindow::MainWindow(QWidget *parent)
     :QMainWindow(parent)
     ,ui(new Ui::MainWindow)
+
 {
     ui->setupUi(this);
+     ui->tableView_2->setModel(ach.afficher());
 
     ui->widjt_icon_text->setVisible(false);
     // Ensure Aceuille tab widget is initially displayed, hide all other tab widgets
@@ -35,20 +65,26 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pushButton_28, &QPushButton::clicked, this, &MainWindow::showMetierMatie2);
     connect(ui->pushButton,    &QPushButton::clicked, this, &MainWindow::showMetierClient1);
     connect(ui->pushButton_2, &QPushButton::clicked, this, &MainWindow::showMetierClient2);
+    connect(ui->ajoutAchatButton, &QPushButton::clicked, this, &MainWindow::ajoutachat);
 
     //5edma men hnee
     connect(ui->ok_2, &QPushButton::clicked, this, &MainWindow::on_ok_2_clicked);
 
     connect(ui->supprimer_2, &QPushButton::clicked, this, &::MainWindow::on_pushButton_supprimer_2_clicked);
+    connect(ui->PDF, &QPushButton::clicked, this, &MainWindow::on_PDF_clicked);
+
+      connect(ui->trieButton, &QPushButton::clicked, this, &MainWindow::on_trieButton_clicked);
+       connect(ui->statButton, &QPushButton::clicked, this, &MainWindow::on_statButton_clicked);
+
+
+
+                  }
 
 
 
 
 
 
-
-
-}
 
 MainWindow::~MainWindow()
 {
@@ -229,4 +265,82 @@ void MainWindow::on_pushButton_mod_clicked(){
                                 "Click Cancel to exit."), QMessageBox::Cancel);
 
 }
+
+
+
+void MainWindow::on_PDF_clicked()
+{
+    int id = 1; // Replace with the actual ID you want to export
+    cmd.pdf_downloader(id);
+
+    QMessageBox::information(this, tr("PDF Export"), tr("The PDF has been successfully generated."));
+}
+
+
+
+
+
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+#include "commande.h"
+#include <QMessageBox>
+#include <QSqlQueryModel>
+#include <QDebug>
+
+
+
+
+void MainWindow::on_trieButton_clicked()
+{
+    // Utiliser la fonction trieButton de commande pour trier par le nom, par exemple
+    QSqlQueryModel* model = cmd.trieButton("PRENOM", true);  // Tri ascendant
+
+    // Définir le modèle sur le TableView (utilisez le nom correct du QTableView)
+    ui->tableView->setModel(model);
+
+    qDebug() << "Les commandes ont été triées et affichées dans le tableau.";
+}
+
+
+void MainWindow::on_statButton_clicked() {
+    qDebug() << "statButton clicked";
+    QString count = cmd.count();
+    qDebug() << "Number of ID:" << count;
+    ui->nbc->setText("Nombre total de ID: " + count);
+}
+
+
+void MainWindow::ajoutachat()
+{
+    // Récupérer les données saisies par l'utilisateur dans le formulaire
+    int id = ui->lineEdit_2->text().toInt();
+    int qt_tapis = ui->lineEdit_6->text().toInt();
+    int qt_couette = ui->lineEdit_7->text().toInt();
+    QString nom = ui->lineEdit_3->text();
+    QString prenom = ui->lineEdit_5->text();
+
+    qDebug() << "ID:" << id;
+    qDebug() << "Quantité Tapis:" << qt_tapis;
+    qDebug() << "Quantité Couette:" << qt_couette;
+    qDebug() << "Nom:" << nom;
+    qDebug() << "Prénom:" << prenom;
+
+    // Créer un objet achat avec les prix passés en dur
+    achat a(id, qt_tapis, qt_couette, 50, 60, nom, prenom);
+
+    // Ajouter l'achat à la base de données
+    if (a.ajouter()) {
+         ui->tableView_2->setModel(ach.afficher());
+        QMessageBox::information(this, "Succès", "Achat ajouté avec succès !");
+    } else {
+        QMessageBox::critical(this, "Erreur", "Échec de l'ajout de l'achat. Vérifiez la base de données.");
+    }
+}
+
+void MainWindow::afficherAchats()
+{ // Utiliser la fonction afficher de achat pour afficher les achats
+    ui->tableView_2->setModel(ach.afficher());
+
+}
+
 

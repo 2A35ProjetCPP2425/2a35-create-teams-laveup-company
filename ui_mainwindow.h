@@ -40,7 +40,7 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QWidget *layoutWidget;
+    QWidget *widget;
     QHBoxLayout *horizontalLayout_12;
     QWidget *widjet_iconsonly;
     QVBoxLayout *verticalLayout_3;
@@ -107,22 +107,21 @@ public:
     QPushButton *pushButton_39;
     QPushButton *pushButton_8;
     QVBoxLayout *verticalLayout_13;
-    QWidget *widget;
+    QWidget *widget1;
     QHBoxLayout *horizontalLayout_7;
     QHBoxLayout *horizontalLayout_6;
     QPushButton *pushButton_15;
-    QSpacerItem *horizontalSpacer_3;
     QHBoxLayout *horizontalLayout_5;
     QLineEdit *lineEdit;
     QPushButton *pushButton_16;
     QLabel *label_6;
     QVBoxLayout *verticalLayout_12;
-    QTabWidget *metier_client1;
-    QWidget *tab_9;
-    QWidget *tab_10;
     QTabWidget *metier_client2;
     QWidget *tab_13;
     QWidget *tab_14;
+    QTabWidget *metier_client1;
+    QWidget *tab_9;
+    QWidget *tab_10;
     QTabWidget *aceuille;
     QWidget *tab_3;
     QDialogButtonBox *buttonBox_6;
@@ -152,6 +151,23 @@ public:
     QLabel *label_154;
     QLineEdit *identi_supp;
     QWidget *tab_4;
+    QTabWidget *metier_comm2;
+    QWidget *tab_18;
+    QLabel *label_2;
+    QGroupBox *groupBox;
+    QLabel *label_5;
+    QLabel *label_7;
+    QLabel *label_8;
+    QLabel *label_9;
+    QLabel *label_10;
+    QLineEdit *lineEdit_2;
+    QLineEdit *lineEdit_3;
+    QLineEdit *lineEdit_5;
+    QLineEdit *lineEdit_6;
+    QLineEdit *lineEdit_7;
+    QPushButton *ajoutAchatButton;
+    QWidget *tab_17;
+    QTableView *tableView_2;
     QTabWidget *metier_comm1;
     QWidget *tab_15;
     QGroupBox *groupBox_2;
@@ -175,6 +191,10 @@ public:
     QPushButton *supprimer_2;
     QTableView *tableView;
     QLineEdit *iddd;
+    QPushButton *trieButton;
+    QPushButton *statButton;
+    QPushButton *PDF;
+    QLineEdit *nbc;
     QWidget *tab;
     QPushButton *mod;
     QLabel *label_21;
@@ -195,26 +215,6 @@ public:
     QLineEdit *qte_c;
     QLineEdit *pren;
     QLineEdit *idd;
-    QTabWidget *metier_comm2;
-    QWidget *tab_17;
-    QPushButton *ok;
-    QGroupBox *groupBox;
-    QLabel *label_2;
-    QLineEdit *id;
-    QLabel *label_5;
-    QLineEdit *nom_2;
-    QLineEdit *prenom_2;
-    QLabel *label_7;
-    QLineEdit *adresse;
-    QLabel *label_8;
-    QLineEdit *telephone;
-    QLabel *label_9;
-    QLineEdit *qte_tapis;
-    QLabel *label_10;
-    QLineEdit *qte_couette;
-    QLabel *label_11;
-    QLabel *label_12;
-    QWidget *tab_18;
     QTabWidget *metier_artic1;
     QWidget *tab_19;
     QWidget *tab_20;
@@ -238,13 +238,13 @@ public:
         MainWindow->resize(1485, 754);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        layoutWidget = new QWidget(centralwidget);
-        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(-50, -90, 1471, 731));
-        horizontalLayout_12 = new QHBoxLayout(layoutWidget);
+        widget = new QWidget(centralwidget);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(1, 1, 1471, 833));
+        horizontalLayout_12 = new QHBoxLayout(widget);
         horizontalLayout_12->setObjectName(QString::fromUtf8("horizontalLayout_12"));
         horizontalLayout_12->setContentsMargins(0, 0, 0, 0);
-        widjet_iconsonly = new QWidget(layoutWidget);
+        widjet_iconsonly = new QWidget(widget);
         widjet_iconsonly->setObjectName(QString::fromUtf8("widjet_iconsonly"));
         widjet_iconsonly->setMinimumSize(QSize(80, 0));
         widjet_iconsonly->setMaximumSize(QSize(80, 16777215));
@@ -392,7 +392,7 @@ public:
 
         horizontalLayout_12->addWidget(widjet_iconsonly);
 
-        widjt_icon_text = new QWidget(layoutWidget);
+        widjt_icon_text = new QWidget(widget);
         widjt_icon_text->setObjectName(QString::fromUtf8("widjt_icon_text"));
         widjt_icon_text->setEnabled(true);
         widjt_icon_text->setAcceptDrops(false);
@@ -905,13 +905,13 @@ public:
 
         verticalLayout_13 = new QVBoxLayout();
         verticalLayout_13->setObjectName(QString::fromUtf8("verticalLayout_13"));
-        widget = new QWidget(layoutWidget);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        horizontalLayout_7 = new QHBoxLayout(widget);
+        widget1 = new QWidget(widget);
+        widget1->setObjectName(QString::fromUtf8("widget1"));
+        horizontalLayout_7 = new QHBoxLayout(widget1);
         horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
         horizontalLayout_6 = new QHBoxLayout();
         horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
-        pushButton_15 = new QPushButton(widget);
+        pushButton_15 = new QPushButton(widget1);
         pushButton_15->setObjectName(QString::fromUtf8("pushButton_15"));
         QIcon icon7;
         icon7.addFile(QString::fromUtf8("../../Downloads/icons8-menu-50 (2).png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -927,13 +927,9 @@ public:
 
         horizontalLayout_7->addLayout(horizontalLayout_6);
 
-        horizontalSpacer_3 = new QSpacerItem(438, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_7->addItem(horizontalSpacer_3);
-
         horizontalLayout_5 = new QHBoxLayout();
         horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
-        lineEdit = new QLineEdit(widget);
+        lineEdit = new QLineEdit(widget1);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
         lineEdit->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
 "width: 200px;\n"
@@ -953,7 +949,7 @@ public:
 
         horizontalLayout_5->addWidget(lineEdit);
 
-        pushButton_16 = new QPushButton(widget);
+        pushButton_16 = new QPushButton(widget1);
         pushButton_16->setObjectName(QString::fromUtf8("pushButton_16"));
         pushButton_16->setStyleSheet(QString::fromUtf8(""));
         QIcon icon8;
@@ -965,31 +961,20 @@ public:
 
         horizontalLayout_5->addWidget(pushButton_16);
 
-        label_6 = new QLabel(widget);
-        label_6->setObjectName(QString::fromUtf8("label_6"));
-
-        horizontalLayout_5->addWidget(label_6);
-
 
         horizontalLayout_7->addLayout(horizontalLayout_5);
 
+        label_6 = new QLabel(widget1);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
 
-        verticalLayout_13->addWidget(widget);
+        horizontalLayout_7->addWidget(label_6);
+
+
+        verticalLayout_13->addWidget(widget1);
 
         verticalLayout_12 = new QVBoxLayout();
         verticalLayout_12->setObjectName(QString::fromUtf8("verticalLayout_12"));
-        metier_client1 = new QTabWidget(layoutWidget);
-        metier_client1->setObjectName(QString::fromUtf8("metier_client1"));
-        tab_9 = new QWidget();
-        tab_9->setObjectName(QString::fromUtf8("tab_9"));
-        metier_client1->addTab(tab_9, QString());
-        tab_10 = new QWidget();
-        tab_10->setObjectName(QString::fromUtf8("tab_10"));
-        metier_client1->addTab(tab_10, QString());
-
-        verticalLayout_12->addWidget(metier_client1);
-
-        metier_client2 = new QTabWidget(layoutWidget);
+        metier_client2 = new QTabWidget(widget);
         metier_client2->setObjectName(QString::fromUtf8("metier_client2"));
         tab_13 = new QWidget();
         tab_13->setObjectName(QString::fromUtf8("tab_13"));
@@ -1000,7 +985,18 @@ public:
 
         verticalLayout_12->addWidget(metier_client2);
 
-        aceuille = new QTabWidget(layoutWidget);
+        metier_client1 = new QTabWidget(widget);
+        metier_client1->setObjectName(QString::fromUtf8("metier_client1"));
+        tab_9 = new QWidget();
+        tab_9->setObjectName(QString::fromUtf8("tab_9"));
+        metier_client1->addTab(tab_9, QString());
+        tab_10 = new QWidget();
+        tab_10->setObjectName(QString::fromUtf8("tab_10"));
+        metier_client1->addTab(tab_10, QString());
+
+        verticalLayout_12->addWidget(metier_client1);
+
+        aceuille = new QTabWidget(widget);
         aceuille->setObjectName(QString::fromUtf8("aceuille"));
         aceuille->setStyleSheet(QString::fromUtf8("background-color: rgb(252, 246, 243);"));
         tab_3 = new QWidget();
@@ -1122,7 +1118,68 @@ public:
 
         verticalLayout_12->addWidget(aceuille);
 
-        metier_comm1 = new QTabWidget(layoutWidget);
+        metier_comm2 = new QTabWidget(widget);
+        metier_comm2->setObjectName(QString::fromUtf8("metier_comm2"));
+        tab_18 = new QWidget();
+        tab_18->setObjectName(QString::fromUtf8("tab_18"));
+        label_2 = new QLabel(tab_18);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(180, 10, 141, 16));
+        label_2->setStyleSheet(QString::fromUtf8("color: rgb(85, 0, 255);"));
+        groupBox = new QGroupBox(tab_18);
+        groupBox->setObjectName(QString::fromUtf8("groupBox"));
+        groupBox->setGeometry(QRect(40, 60, 311, 221));
+        label_5 = new QLabel(groupBox);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setGeometry(QRect(10, 40, 51, 16));
+        label_5->setStyleSheet(QString::fromUtf8("color: rgb(85, 170, 255);"));
+        label_7 = new QLabel(groupBox);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setGeometry(QRect(10, 70, 61, 16));
+        label_7->setStyleSheet(QString::fromUtf8("color: rgb(85, 170, 255);"));
+        label_8 = new QLabel(groupBox);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setGeometry(QRect(10, 110, 51, 16));
+        label_8->setStyleSheet(QString::fromUtf8("color: rgb(85, 170, 255);"));
+        label_9 = new QLabel(groupBox);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+        label_9->setGeometry(QRect(10, 140, 61, 16));
+        label_9->setStyleSheet(QString::fromUtf8("color: rgb(85, 170, 255);"));
+        label_10 = new QLabel(groupBox);
+        label_10->setObjectName(QString::fromUtf8("label_10"));
+        label_10->setGeometry(QRect(10, 180, 71, 16));
+        label_10->setStyleSheet(QString::fromUtf8("color: rgb(85, 170, 255);"));
+        lineEdit_2 = new QLineEdit(groupBox);
+        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        lineEdit_2->setGeometry(QRect(90, 40, 113, 20));
+        lineEdit_3 = new QLineEdit(groupBox);
+        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
+        lineEdit_3->setGeometry(QRect(90, 70, 113, 20));
+        lineEdit_5 = new QLineEdit(groupBox);
+        lineEdit_5->setObjectName(QString::fromUtf8("lineEdit_5"));
+        lineEdit_5->setGeometry(QRect(90, 110, 113, 20));
+        lineEdit_6 = new QLineEdit(groupBox);
+        lineEdit_6->setObjectName(QString::fromUtf8("lineEdit_6"));
+        lineEdit_6->setGeometry(QRect(90, 140, 113, 20));
+        lineEdit_7 = new QLineEdit(groupBox);
+        lineEdit_7->setObjectName(QString::fromUtf8("lineEdit_7"));
+        lineEdit_7->setGeometry(QRect(90, 170, 113, 20));
+        ajoutAchatButton = new QPushButton(tab_18);
+        ajoutAchatButton->setObjectName(QString::fromUtf8("ajoutAchatButton"));
+        ajoutAchatButton->setGeometry(QRect(150, 290, 80, 18));
+        ajoutAchatButton->setStyleSheet(QString::fromUtf8("color: rgb(85, 0, 255);"));
+        metier_comm2->addTab(tab_18, QString());
+        tab_17 = new QWidget();
+        tab_17->setObjectName(QString::fromUtf8("tab_17"));
+        tableView_2 = new QTableView(tab_17);
+        tableView_2->setObjectName(QString::fromUtf8("tableView_2"));
+        tableView_2->setGeometry(QRect(20, 20, 961, 311));
+        tableView_2->setStyleSheet(QString::fromUtf8("color: rgb(85, 0, 255);"));
+        metier_comm2->addTab(tab_17, QString());
+
+        verticalLayout_12->addWidget(metier_comm2);
+
+        metier_comm1 = new QTabWidget(widget);
         metier_comm1->setObjectName(QString::fromUtf8("metier_comm1"));
         tab_15 = new QWidget();
         tab_15->setObjectName(QString::fromUtf8("tab_15"));
@@ -1133,14 +1190,16 @@ public:
         label_13 = new QLabel(groupBox_2);
         label_13->setObjectName(QString::fromUtf8("label_13"));
         label_13->setGeometry(QRect(10, 40, 37, 12));
-        label_13->setStyleSheet(QString::fromUtf8("color:Black;"));
+        label_13->setStyleSheet(QString::fromUtf8("color:Black;\n"
+"color: rgb(85, 0, 255);"));
         id_2 = new QLineEdit(groupBox_2);
         id_2->setObjectName(QString::fromUtf8("id_2"));
         id_2->setGeometry(QRect(50, 40, 113, 20));
         label_14 = new QLabel(groupBox_2);
         label_14->setObjectName(QString::fromUtf8("label_14"));
-        label_14->setGeometry(QRect(10, 70, 37, 12));
-        label_14->setStyleSheet(QString::fromUtf8("color:Black;"));
+        label_14->setGeometry(QRect(10, 70, 41, 16));
+        label_14->setStyleSheet(QString::fromUtf8("color:Black;\n"
+"color: rgb(85, 0, 255);"));
         nom_3 = new QLineEdit(groupBox_2);
         nom_3->setObjectName(QString::fromUtf8("nom_3"));
         nom_3->setGeometry(QRect(50, 70, 113, 20));
@@ -1149,39 +1208,45 @@ public:
         prenom_3->setGeometry(QRect(50, 100, 113, 20));
         label_15 = new QLabel(groupBox_2);
         label_15->setObjectName(QString::fromUtf8("label_15"));
-        label_15->setGeometry(QRect(10, 100, 37, 12));
-        label_15->setStyleSheet(QString::fromUtf8("color:Black;"));
+        label_15->setGeometry(QRect(10, 100, 41, 16));
+        label_15->setStyleSheet(QString::fromUtf8("color:Black;\n"
+"color: rgb(85, 0, 255);"));
         adresse_2 = new QLineEdit(groupBox_2);
         adresse_2->setObjectName(QString::fromUtf8("adresse_2"));
         adresse_2->setGeometry(QRect(50, 130, 113, 20));
         label_16 = new QLabel(groupBox_2);
         label_16->setObjectName(QString::fromUtf8("label_16"));
-        label_16->setGeometry(QRect(10, 130, 37, 12));
-        label_16->setStyleSheet(QString::fromUtf8("color:Black;"));
+        label_16->setGeometry(QRect(10, 130, 41, 16));
+        label_16->setStyleSheet(QString::fromUtf8("color:Black;\n"
+"color: rgb(85, 0, 255);"));
         telephone_2 = new QLineEdit(groupBox_2);
         telephone_2->setObjectName(QString::fromUtf8("telephone_2"));
-        telephone_2->setGeometry(QRect(50, 160, 113, 20));
+        telephone_2->setGeometry(QRect(60, 160, 113, 20));
         label_17 = new QLabel(groupBox_2);
         label_17->setObjectName(QString::fromUtf8("label_17"));
-        label_17->setGeometry(QRect(10, 160, 41, 16));
-        label_17->setStyleSheet(QString::fromUtf8("color:Black;"));
+        label_17->setGeometry(QRect(10, 160, 51, 16));
+        label_17->setStyleSheet(QString::fromUtf8("color:Black;\n"
+"color: rgb(85, 0, 255);"));
         qte_tapis_2 = new QLineEdit(groupBox_2);
         qte_tapis_2->setObjectName(QString::fromUtf8("qte_tapis_2"));
         qte_tapis_2->setGeometry(QRect(70, 220, 113, 20));
         label_18 = new QLabel(groupBox_2);
         label_18->setObjectName(QString::fromUtf8("label_18"));
-        label_18->setGeometry(QRect(10, 220, 37, 12));
-        label_18->setStyleSheet(QString::fromUtf8("color:Black;"));
+        label_18->setGeometry(QRect(10, 220, 41, 16));
+        label_18->setStyleSheet(QString::fromUtf8("color:Black;\n"
+"color: rgb(85, 0, 255);"));
         qte_couette_2 = new QLineEdit(groupBox_2);
         qte_couette_2->setObjectName(QString::fromUtf8("qte_couette_2"));
         qte_couette_2->setGeometry(QRect(70, 190, 113, 20));
         label_19 = new QLabel(groupBox_2);
         label_19->setObjectName(QString::fromUtf8("label_19"));
         label_19->setGeometry(QRect(10, 190, 51, 16));
-        label_19->setStyleSheet(QString::fromUtf8("color:Black;"));
+        label_19->setStyleSheet(QString::fromUtf8("color:Black;\n"
+"color: rgb(85, 0, 255);"));
         ok_2 = new QPushButton(tab_15);
         ok_2->setObjectName(QString::fromUtf8("ok_2"));
         ok_2->setGeometry(QRect(420, 320, 80, 18));
+        ok_2->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);"));
         label_20 = new QLabel(tab_15);
         label_20->setObjectName(QString::fromUtf8("label_20"));
         label_20->setGeometry(QRect(400, -20, 301, 81));
@@ -1192,26 +1257,47 @@ public:
         tab_16->setObjectName(QString::fromUtf8("tab_16"));
         supprimer_2 = new QPushButton(tab_16);
         supprimer_2->setObjectName(QString::fromUtf8("supprimer_2"));
-        supprimer_2->setGeometry(QRect(350, 230, 201, 251));
+        supprimer_2->setGeometry(QRect(160, 330, 91, 21));
+        supprimer_2->setStyleSheet(QString::fromUtf8("color: rgb(85, 0, 255);"));
         tableView = new QTableView(tab_16);
         tableView->setObjectName(QString::fromUtf8("tableView"));
-        tableView->setGeometry(QRect(70, 20, 1011, 231));
+        tableView->setGeometry(QRect(0, 20, 1011, 261));
         tableView->setStyleSheet(QString::fromUtf8("color:black;"));
         iddd = new QLineEdit(tab_16);
         iddd->setObjectName(QString::fromUtf8("iddd"));
-        iddd->setGeometry(QRect(0, 330, 113, 20));
+        iddd->setGeometry(QRect(0, 330, 151, 20));
+        trieButton = new QPushButton(tab_16);
+        trieButton->setObjectName(QString::fromUtf8("trieButton"));
+        trieButton->setGeometry(QRect(310, 290, 80, 18));
+        trieButton->setStyleSheet(QString::fromUtf8("color: rgb(85, 0, 255);"));
+        statButton = new QPushButton(tab_16);
+        statButton->setObjectName(QString::fromUtf8("statButton"));
+        statButton->setGeometry(QRect(0, 370, 111, 18));
+        statButton->setStyleSheet(QString::fromUtf8("color: rgb(85, 0, 255);"));
+        PDF = new QPushButton(tab_16);
+        PDF->setObjectName(QString::fromUtf8("PDF"));
+        PDF->setGeometry(QRect(10, 440, 80, 18));
+        PDF->setStyleSheet(QString::fromUtf8("color: rgb(85, 0, 255);"));
+        nbc = new QLineEdit(tab_16);
+        nbc->setObjectName(QString::fromUtf8("nbc"));
+        nbc->setGeometry(QRect(120, 370, 151, 20));
+        nbc->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);"));
         metier_comm1->addTab(tab_16, QString());
         tab = new QWidget();
         tab->setObjectName(QString::fromUtf8("tab"));
         mod = new QPushButton(tab);
         mod->setObjectName(QString::fromUtf8("mod"));
         mod->setGeometry(QRect(170, 320, 80, 18));
+        mod->setStyleSheet(QString::fromUtf8("color: rgb(85, 170, 255);"));
         label_21 = new QLabel(tab);
         label_21->setObjectName(QString::fromUtf8("label_21"));
-        label_21->setGeometry(QRect(180, 110, 61, 16));
+        label_21->setGeometry(QRect(160, 110, 81, 20));
+        label_21->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
+"color: rgb(0, 0, 255);"));
         pushButton_17 = new QPushButton(tab);
         pushButton_17->setObjectName(QString::fromUtf8("pushButton_17"));
         pushButton_17->setGeometry(QRect(380, 110, 80, 18));
+        pushButton_17->setStyleSheet(QString::fromUtf8("color: rgb(85, 170, 255);"));
         label_22 = new QLabel(tab);
         label_22->setObjectName(QString::fromUtf8("label_22"));
         label_22->setGeometry(QRect(180, 40, 171, 61));
@@ -1224,31 +1310,37 @@ public:
         formLayout->setContentsMargins(0, 0, 0, 0);
         label_23 = new QLabel(formLayoutWidget);
         label_23->setObjectName(QString::fromUtf8("label_23"));
+        label_23->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);"));
 
         formLayout->setWidget(0, QFormLayout::LabelRole, label_23);
 
         label_24 = new QLabel(formLayoutWidget);
         label_24->setObjectName(QString::fromUtf8("label_24"));
+        label_24->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);"));
 
         formLayout->setWidget(1, QFormLayout::LabelRole, label_24);
 
         label_25 = new QLabel(formLayoutWidget);
         label_25->setObjectName(QString::fromUtf8("label_25"));
+        label_25->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);"));
 
         formLayout->setWidget(2, QFormLayout::LabelRole, label_25);
 
         label_26 = new QLabel(formLayoutWidget);
         label_26->setObjectName(QString::fromUtf8("label_26"));
+        label_26->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);"));
 
         formLayout->setWidget(3, QFormLayout::LabelRole, label_26);
 
         label_27 = new QLabel(formLayoutWidget);
         label_27->setObjectName(QString::fromUtf8("label_27"));
+        label_27->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);"));
 
         formLayout->setWidget(5, QFormLayout::LabelRole, label_27);
 
         label_28 = new QLabel(formLayoutWidget);
         label_28->setObjectName(QString::fromUtf8("label_28"));
+        label_28->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);"));
 
         formLayout->setWidget(4, QFormLayout::LabelRole, label_28);
 
@@ -1289,79 +1381,7 @@ public:
 
         verticalLayout_12->addWidget(metier_comm1);
 
-        metier_comm2 = new QTabWidget(layoutWidget);
-        metier_comm2->setObjectName(QString::fromUtf8("metier_comm2"));
-        tab_17 = new QWidget();
-        tab_17->setObjectName(QString::fromUtf8("tab_17"));
-        ok = new QPushButton(tab_17);
-        ok->setObjectName(QString::fromUtf8("ok"));
-        ok->setGeometry(QRect(150, 360, 80, 18));
-        groupBox = new QGroupBox(tab_17);
-        groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(50, 90, 361, 261));
-        groupBox->setStyleSheet(QString::fromUtf8("color:blue;"));
-        label_2 = new QLabel(groupBox);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(10, 40, 37, 12));
-        label_2->setStyleSheet(QString::fromUtf8("color:Black;"));
-        id = new QLineEdit(groupBox);
-        id->setObjectName(QString::fromUtf8("id"));
-        id->setGeometry(QRect(50, 40, 113, 20));
-        label_5 = new QLabel(groupBox);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setGeometry(QRect(10, 70, 37, 12));
-        label_5->setStyleSheet(QString::fromUtf8("color:Black;"));
-        nom_2 = new QLineEdit(groupBox);
-        nom_2->setObjectName(QString::fromUtf8("nom_2"));
-        nom_2->setGeometry(QRect(50, 70, 113, 20));
-        prenom_2 = new QLineEdit(groupBox);
-        prenom_2->setObjectName(QString::fromUtf8("prenom_2"));
-        prenom_2->setGeometry(QRect(50, 100, 113, 20));
-        label_7 = new QLabel(groupBox);
-        label_7->setObjectName(QString::fromUtf8("label_7"));
-        label_7->setGeometry(QRect(10, 100, 37, 12));
-        label_7->setStyleSheet(QString::fromUtf8("color:Black;"));
-        adresse = new QLineEdit(groupBox);
-        adresse->setObjectName(QString::fromUtf8("adresse"));
-        adresse->setGeometry(QRect(50, 130, 113, 20));
-        label_8 = new QLabel(groupBox);
-        label_8->setObjectName(QString::fromUtf8("label_8"));
-        label_8->setGeometry(QRect(10, 130, 37, 12));
-        label_8->setStyleSheet(QString::fromUtf8("color:Black;"));
-        telephone = new QLineEdit(groupBox);
-        telephone->setObjectName(QString::fromUtf8("telephone"));
-        telephone->setGeometry(QRect(50, 160, 113, 20));
-        label_9 = new QLabel(groupBox);
-        label_9->setObjectName(QString::fromUtf8("label_9"));
-        label_9->setGeometry(QRect(10, 160, 41, 16));
-        label_9->setStyleSheet(QString::fromUtf8("color:Black;"));
-        qte_tapis = new QLineEdit(groupBox);
-        qte_tapis->setObjectName(QString::fromUtf8("qte_tapis"));
-        qte_tapis->setGeometry(QRect(70, 220, 113, 20));
-        label_10 = new QLabel(groupBox);
-        label_10->setObjectName(QString::fromUtf8("label_10"));
-        label_10->setGeometry(QRect(10, 220, 37, 12));
-        label_10->setStyleSheet(QString::fromUtf8("color:Black;"));
-        qte_couette = new QLineEdit(groupBox);
-        qte_couette->setObjectName(QString::fromUtf8("qte_couette"));
-        qte_couette->setGeometry(QRect(70, 190, 113, 20));
-        label_11 = new QLabel(groupBox);
-        label_11->setObjectName(QString::fromUtf8("label_11"));
-        label_11->setGeometry(QRect(10, 190, 51, 16));
-        label_11->setStyleSheet(QString::fromUtf8("color:Black;"));
-        label_12 = new QLabel(tab_17);
-        label_12->setObjectName(QString::fromUtf8("label_12"));
-        label_12->setGeometry(QRect(160, 10, 231, 81));
-        label_12->setStyleSheet(QString::fromUtf8("font: 700 26pt \"Segoe UI\";\n"
-""));
-        metier_comm2->addTab(tab_17, QString());
-        tab_18 = new QWidget();
-        tab_18->setObjectName(QString::fromUtf8("tab_18"));
-        metier_comm2->addTab(tab_18, QString());
-
-        verticalLayout_12->addWidget(metier_comm2);
-
-        metier_artic1 = new QTabWidget(layoutWidget);
+        metier_artic1 = new QTabWidget(widget);
         metier_artic1->setObjectName(QString::fromUtf8("metier_artic1"));
         tab_19 = new QWidget();
         tab_19->setObjectName(QString::fromUtf8("tab_19"));
@@ -1372,7 +1392,7 @@ public:
 
         verticalLayout_12->addWidget(metier_artic1);
 
-        metier_artic2 = new QTabWidget(layoutWidget);
+        metier_artic2 = new QTabWidget(widget);
         metier_artic2->setObjectName(QString::fromUtf8("metier_artic2"));
         tab_21 = new QWidget();
         tab_21->setObjectName(QString::fromUtf8("tab_21"));
@@ -1383,7 +1403,7 @@ public:
 
         verticalLayout_12->addWidget(metier_artic2);
 
-        demande_conge = new QTabWidget(layoutWidget);
+        demande_conge = new QTabWidget(widget);
         demande_conge->setObjectName(QString::fromUtf8("demande_conge"));
         tab_7 = new QWidget();
         tab_7->setObjectName(QString::fromUtf8("tab_7"));
@@ -1394,7 +1414,7 @@ public:
 
         verticalLayout_12->addWidget(demande_conge);
 
-        metier_matie2 = new QTabWidget(layoutWidget);
+        metier_matie2 = new QTabWidget(widget);
         metier_matie2->setObjectName(QString::fromUtf8("metier_matie2"));
         tab_25 = new QWidget();
         tab_25->setObjectName(QString::fromUtf8("tab_25"));
@@ -1405,7 +1425,7 @@ public:
 
         verticalLayout_12->addWidget(metier_matie2);
 
-        metier_matie1 = new QTabWidget(layoutWidget);
+        metier_matie1 = new QTabWidget(widget);
         metier_matie1->setObjectName(QString::fromUtf8("metier_matie1"));
         tab_23 = new QWidget();
         tab_23->setObjectName(QString::fromUtf8("tab_23"));
@@ -1442,11 +1462,11 @@ public:
         QObject::connect(pushButton_12, &QPushButton::toggled, widjt_icon_text, &QWidget::setVisible);
         QObject::connect(pushButton_13, &QPushButton::toggled, widjt_icon_text, &QWidget::setVisible);
 
-        metier_client1->setCurrentIndex(0);
         metier_client2->setCurrentIndex(0);
+        metier_client1->setCurrentIndex(0);
         aceuille->setCurrentIndex(0);
-        metier_comm1->setCurrentIndex(1);
-        metier_comm2->setCurrentIndex(0);
+        metier_comm2->setCurrentIndex(1);
+        metier_comm1->setCurrentIndex(0);
         metier_artic1->setCurrentIndex(1);
         metier_artic2->setCurrentIndex(1);
         metier_matie2->setCurrentIndex(0);
@@ -1497,10 +1517,10 @@ public:
         lineEdit->setPlaceholderText(QCoreApplication::translate("MainWindow", "Search...", nullptr));
         pushButton_16->setText(QString());
         label_6->setText(QString());
-        metier_client1->setTabText(metier_client1->indexOf(tab_9), QCoreApplication::translate("MainWindow", "metier_client1", nullptr));
-        metier_client1->setTabText(metier_client1->indexOf(tab_10), QCoreApplication::translate("MainWindow", "metier_client1-1", nullptr));
         metier_client2->setTabText(metier_client2->indexOf(tab_13), QCoreApplication::translate("MainWindow", "metier_client2", nullptr));
         metier_client2->setTabText(metier_client2->indexOf(tab_14), QCoreApplication::translate("MainWindow", "metier_client2.1", nullptr));
+        metier_client1->setTabText(metier_client1->indexOf(tab_9), QCoreApplication::translate("MainWindow", "metier_client1", nullptr));
+        metier_client1->setTabText(metier_client1->indexOf(tab_10), QCoreApplication::translate("MainWindow", "metier_client1-1", nullptr));
         supprimer->setText(QCoreApplication::translate("MainWindow", "Supprimer", nullptr));
         nom->setPlaceholderText(QCoreApplication::translate("MainWindow", "Nom", nullptr));
         comboBox_11->setItemText(0, QCoreApplication::translate("MainWindow", "Salaire", nullptr));
@@ -1544,6 +1564,16 @@ public:
         identi_supp->setPlaceholderText(QCoreApplication::translate("MainWindow", "identifiant", nullptr));
         aceuille->setTabText(aceuille->indexOf(tab_3), QCoreApplication::translate("MainWindow", "Consulter", nullptr));
         aceuille->setTabText(aceuille->indexOf(tab_4), QCoreApplication::translate("MainWindow", "Statistique", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "Commande", nullptr));
+        groupBox->setTitle(QCoreApplication::translate("MainWindow", "commande", nullptr));
+        label_5->setText(QCoreApplication::translate("MainWindow", "id", nullptr));
+        label_7->setText(QCoreApplication::translate("MainWindow", "nom", nullptr));
+        label_8->setText(QCoreApplication::translate("MainWindow", "prenom", nullptr));
+        label_9->setText(QCoreApplication::translate("MainWindow", "qt_tapis", nullptr));
+        label_10->setText(QCoreApplication::translate("MainWindow", "qt_couette", nullptr));
+        ajoutAchatButton->setText(QCoreApplication::translate("MainWindow", "Ajouter", nullptr));
+        metier_comm2->setTabText(metier_comm2->indexOf(tab_18), QCoreApplication::translate("MainWindow", "metier_comm2-1", nullptr));
+        metier_comm2->setTabText(metier_comm2->indexOf(tab_17), QCoreApplication::translate("MainWindow", "matier_comm2", nullptr));
         groupBox_2->setTitle(QCoreApplication::translate("MainWindow", "Ajout", nullptr));
         label_13->setText(QCoreApplication::translate("MainWindow", "ID ", nullptr));
         label_14->setText(QCoreApplication::translate("MainWindow", "Nom", nullptr));
@@ -1557,9 +1587,12 @@ public:
         label_20->setText(QCoreApplication::translate("MainWindow", "Ajout Commande", nullptr));
         metier_comm1->setTabText(metier_comm1->indexOf(tab_15), QCoreApplication::translate("MainWindow", "Ajout Commande", nullptr));
         supprimer_2->setText(QCoreApplication::translate("MainWindow", "supprimer", nullptr));
+        trieButton->setText(QCoreApplication::translate("MainWindow", "trieButton", nullptr));
+        statButton->setText(QCoreApplication::translate("MainWindow", "statButton", nullptr));
+        PDF->setText(QCoreApplication::translate("MainWindow", "PDF", nullptr));
         metier_comm1->setTabText(metier_comm1->indexOf(tab_16), QCoreApplication::translate("MainWindow", "metier-comm2", nullptr));
         mod->setText(QCoreApplication::translate("MainWindow", "modifier", nullptr));
-        label_21->setText(QCoreApplication::translate("MainWindow", "recherche \"id\"", nullptr));
+        label_21->setText(QCoreApplication::translate("MainWindow", "Recherche \"id\"", nullptr));
         pushButton_17->setText(QCoreApplication::translate("MainWindow", "recherche", nullptr));
         label_22->setText(QCoreApplication::translate("MainWindow", "modification", nullptr));
         label_23->setText(QCoreApplication::translate("MainWindow", "nom", nullptr));
@@ -1569,19 +1602,6 @@ public:
         label_27->setText(QCoreApplication::translate("MainWindow", "quantite couette", nullptr));
         label_28->setText(QCoreApplication::translate("MainWindow", "prenom", nullptr));
         metier_comm1->setTabText(metier_comm1->indexOf(tab), QCoreApplication::translate("MainWindow", "modification", nullptr));
-        ok->setText(QCoreApplication::translate("MainWindow", "Ok", nullptr));
-        groupBox->setTitle(QCoreApplication::translate("MainWindow", "Ajout", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "ID ", nullptr));
-        label_5->setText(QCoreApplication::translate("MainWindow", "Nom", nullptr));
-        label_7->setText(QCoreApplication::translate("MainWindow", "prenom", nullptr));
-        adresse->setText(QString());
-        label_8->setText(QCoreApplication::translate("MainWindow", "adresse", nullptr));
-        label_9->setText(QCoreApplication::translate("MainWindow", "telephone", nullptr));
-        label_10->setText(QCoreApplication::translate("MainWindow", "qte_tapis", nullptr));
-        label_11->setText(QCoreApplication::translate("MainWindow", "qte_couette", nullptr));
-        label_12->setText(QCoreApplication::translate("MainWindow", "Ajout Commande", nullptr));
-        metier_comm2->setTabText(metier_comm2->indexOf(tab_17), QCoreApplication::translate("MainWindow", "matier_comm2", nullptr));
-        metier_comm2->setTabText(metier_comm2->indexOf(tab_18), QCoreApplication::translate("MainWindow", "metier_comm2-1", nullptr));
         metier_artic1->setTabText(metier_artic1->indexOf(tab_19), QCoreApplication::translate("MainWindow", "metier_artic1", nullptr));
         metier_artic1->setTabText(metier_artic1->indexOf(tab_20), QCoreApplication::translate("MainWindow", "metier_artic1-1", nullptr));
         metier_artic2->setTabText(metier_artic2->indexOf(tab_21), QCoreApplication::translate("MainWindow", "metier_artic2", nullptr));

@@ -25,12 +25,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        achat.cpp \
         commande.cpp \
         connexion.cpp \
         main.cpp \
         mainwindow.cpp
 
 HEADERS += \
+        achat.h \
         commande.h \
         connexion.h \
         mainwindow.h
@@ -42,3 +44,4 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+QT += core gui sql printsupport

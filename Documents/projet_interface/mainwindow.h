@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "connexion.h"
 #include "employe.h"
 #include <QDialog> // For the login dialog
 
@@ -16,7 +15,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);  // Explicit keyword added
+    explicit MainWindow(const QString &email, QWidget *parent = nullptr);  // Explicit keyword added
     ~MainWindow();
 
 private slots:
@@ -31,17 +30,24 @@ private slots:
     void showMetierClient1();
     void showMetierClient2();
     void onSortSelectionChanged(int index);
-    void on_pushButton_23_clicked();
+    void onDepartmentChanged();
+    void onSelectionChanged(const QItemSelection &selected);
+    void displayCongeStats();
+
+
+
+
+
+
+
 
 
 
 private:
     Ui::MainWindow *ui;
+    QString userEmail;
     Employe emp;
-    QDialog *loginDialog;  // This will be the login dialog window
-    QLineEdit *usernameLineEdit;
-    QLineEdit *passwordLineEdit;
-    QPushButton *loginButton;
+
 
 
 
@@ -58,6 +64,63 @@ private:
 
     // Method to set up and populate the combo box
     void setupComboBoxes();
+    void privilege();
+    void employetelechargerPDF();
+    void displayGenderStatistics();
+    void bienmessage();
+    void onTabChanged(int index);
+    void onrasionChanged();
+    void onIdChanged();
+    void populateEmployeeInfo();
+    void on_idEmpChanged();
+    void onaddconge();
+    void onUpdateTypeCongeClicked();
+    void on_acceptation_clicked();
+    void on_refuser_clicked();
+    void refreshTableView();
+    void on_searchcongeButton_clicked();
+    void onclearcongebutton();
+    void afficherCongeEmploye();
+    void on_searchcongeButtonhistorique_clicked();
+    void onclearcongebuttonhistorique();
+    void updateSearchResults(const QString &searchText);
+    void filterEmployees(const QString &searchText);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 };
 

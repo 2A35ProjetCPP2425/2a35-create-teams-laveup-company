@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>742</width>
+    <height>769</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* QWidget styling */
+QWidget {
+	background-color: white;
+  }
+
+/* QLineEdit styling */
+QLineEdit {
+    background-color: #f0f0f0;
+    border: 1px solid #5c5c5c;
+    padding: 5px;
+    font-size: 14px;
+    color: #333333;
+}
+
+QLineEdit:hover {
+    border: 1px solid #0078d7;
+}
+
+QLineEdit:focus {
+    border: 1px solid #3b5998;
+    background-color: #ffffff;
+}
+
+QPushButton {
+    color: black;
+    border: 1px solid #5c5c5c;
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: rgb(252, 246, 243);
+}
+
+QPushButton:pressed {
+    background-color: #C0C0C0; /* Change background color when pressed */
+    border: 1px solid black; /* Change border color when pressed */
+}
+
+QPushButton:disabled {
+    background-color: #C0C0C0;
+    color: #a0a0a0;
+    border: 1px solid #d3d3d3;
+}
+
+
+/* QLabel styling */
+QLabel {
+    font-size: 14px;
+    color: #333333;
+    padding: 5px;
+    border: none; /* Remove border if not needed */
+}
+
+
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>-40</x>
+     <y>0</y>
+     <width>781</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Downloads/WhatsApp Image 2024-10-09 à 01.43.56_e93c0859.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="email">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>340</y>
+     <width>391</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>identifiant</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>172</x>
+     <y>410</y>
+     <width>31</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid black;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Downloads/padlock.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="password">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>410</y>
+     <width>391</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>password</string>
+   </property>
+   <property name="cursorMoveStyle">
+    <enum>Qt::LogicalMoveStyle</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="connecter">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>510</y>
+     <width>421</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Se Connecter</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="compte">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>690</y>
+     <width>421</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Connexion facile en tant que Client</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="mdpo">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>560</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 168);
+border:none;</string>
+   </property>
+   <property name="text">
+    <string>mot de passe oublier ?</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>640</y>
+     <width>291</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>vous pouvez connect en tant que client :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>340</y>
+     <width>31</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::PreventContextMenu</enum>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid black;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Downloads/user (1).png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>459</y>
+     <width>421</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_2</zorder>
+  <zorder>label_4</zorder>
+  <zorder>mdpo</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label</zorder>
+  <zorder>email</zorder>
+  <zorder>label_3</zorder>
+  <zorder>password</zorder>
+  <zorder>connecter</zorder>
+  <zorder>compte</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

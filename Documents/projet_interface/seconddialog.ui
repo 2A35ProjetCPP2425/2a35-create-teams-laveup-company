@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>742</width>
-    <height>790</height>
+    <height>570</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -69,6 +69,7 @@ QLabel {
 }
 
 
+
 </string>
   </property>
   <widget class="QLabel" name="label">
@@ -90,184 +91,108 @@ QLabel {
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>220</y>
-     <width>281</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Crée un compte :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>280</y>
-     <width>91</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Login&lt;/span&gt;&lt;span style=&quot; font-size:11pt; color:#aa0000;&quot;&gt; *&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>320</y>
-     <width>721</width>
-     <height>41</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>370</y>
-     <width>91</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#000000;&quot;&gt;Email&lt;/span&gt;&lt;span style=&quot; font-size:11pt; color:#aa0000;&quot;&gt; *&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>410</y>
-     <width>721</width>
-     <height>41</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>450</y>
-     <width>141</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#000000;&quot;&gt;Mot De Passe&lt;/span&gt;&lt;span style=&quot; font-size:11pt; color:#aa0000;&quot;&gt; *&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>490</y>
-     <width>721</width>
-     <height>41</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>540</y>
-     <width>231</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#000000;&quot;&gt;Mot de Passe (Vérification)&lt;/span&gt;&lt;span style=&quot; font-size:11pt; color:#aa0000;&quot;&gt; *&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>580</y>
-     <width>721</width>
-     <height>41</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>630</y>
-     <width>141</width>
-     <height>41</height>
+     <x>188</x>
+     <y>203</y>
+     <width>441</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font-size: 15px;</string>
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;mot de passe oublier ?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="confirmation">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>458</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
     <string>Confiramtion</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="insc">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>680</y>
+     <x>11</x>
+     <y>499</y>
      <width>721</width>
      <height>61</height>
     </rect>
    </property>
    <property name="text">
-    <string>S'inscrire</string>
+    <string>Continuer</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_7">
+  <widget class="QLineEdit" name="id">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>750</y>
-     <width>181</width>
-     <height>31</height>
+     <y>421</y>
+     <width>721</width>
+     <height>41</height>
     </rect>
    </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Vous avez déja un compte ?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
   </widget>
-  <widget class="QPushButton" name="alogin">
+  <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
-     <x>132</x>
-     <y>749</y>
-     <width>201</width>
-     <height>31</height>
+     <x>4</x>
+     <y>376</y>
+     <width>181</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border: none;
-color: rgb(0, 0, 139);</string>
+    <string notr="true">background-color:white ;</string>
    </property>
    <property name="text">
-    <string>Se connecter</string>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Identifiant:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <zorder>alogin</zorder>
-  <zorder>label_5</zorder>
-  <zorder>label_2</zorder>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>590</y>
+     <width>371</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>270</y>
+     <width>741</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Renseignez vote identifiant afin de recevoir les &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;instruction pour le réintialiser&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <zorder>label_8</zorder>
   <zorder>label</zorder>
+  <zorder>confirmation</zorder>
+  <zorder>insc</zorder>
+  <zorder>id</zorder>
+  <zorder>label_11</zorder>
   <zorder>label_3</zorder>
-  <zorder>lineEdit</zorder>
-  <zorder>label_4</zorder>
-  <zorder>lineEdit_2</zorder>
-  <zorder>lineEdit_3</zorder>
-  <zorder>label_6</zorder>
-  <zorder>lineEdit_4</zorder>
-  <zorder>checkBox</zorder>
-  <zorder>pushButton</zorder>
-  <zorder>label_7</zorder>
+  <zorder>label_2</zorder>
  </widget>
  <resources/>
  <connections/>

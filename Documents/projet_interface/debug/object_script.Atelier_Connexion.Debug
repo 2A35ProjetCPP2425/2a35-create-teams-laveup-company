@@ -1,0 +1,11 @@
+debug/buttondelegate.o
+debug/connexion.o
+debug/dialog.o
+debug/employe.o
+debug/main.o
+debug/mainwindow.o
+debug/seconddialog.o
+debug/moc_buttondelegate.o
+debug/moc_dialog.o
+debug/moc_mainwindow.o
+debug/moc_seconddialog.o

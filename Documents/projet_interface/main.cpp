@@ -1,27 +1,33 @@
 #include "mainwindow.h"
 #include <QApplication>
-#include <QMessageBox>
 #include "connexion.h"
+#include <QMessageBox>
+#include "dialog.h"
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
     Connection c;
-    bool test = c.createconnect(); // Établir la connexion à la base de données
+    bool test = c.createconnect();
 
-    if (test) {
-        MainWindow *w = new MainWindow(); // Instancier MainWindow sur le tas
-        w->show(); // Afficher la fenêtre principale
-
-        QMessageBox::information(nullptr, QObject::tr("Database is open"),
-                                 QObject::tr("Connection successful.\n"
-                                             "Click OK to continue.")); // Message de succès
-    } else {
+    if (!test) {
         QMessageBox::critical(nullptr, QObject::tr("Database is not open"),
-                              QObject::tr("Connection failed.\n"
-                                          "Click Cancel to exit."), QMessageBox::Cancel);
-        return -1; // Quitter l'application si la connexion échoue
+                              QObject::tr("Connection failed.\nClick Cancel to exit."),
+                              QMessageBox::Cancel);
+        return -1; // Exit the application if database connection fails
     }
 
-    return a.exec(); // Démarrer l'événement loop
+    QMessageBox::information(nullptr, QObject::tr("Database is open"),
+                             QObject::tr("Connection successful.\nClick OK to continue."),
+                             QMessageBox::Ok);
+
+    // Show the login dialog
+    Dialog dialog;
+    if (dialog.exec() == QDialog::Accepted) {
+        QString email = dialog.getEmail();  // Call the getter functio
+        MainWindow w(email);
+        w.show();
+        return a.exec(); // Start the application event loop
+    } else {
+        return 0; // Exit if login fails
+    }
 }

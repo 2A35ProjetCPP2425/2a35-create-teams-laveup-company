@@ -5,7 +5,8 @@
 #-------------------------------------------------
 
 QT += core gui sql
-
+QT += network
+QT += charts
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -27,17 +28,25 @@ CONFIG += c++11
 
 SOURCES += \
         connexion.cpp \
+        dialog.cpp \
         employe.cpp \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+        seconddialog.cpp
+
+
 
 HEADERS += \
         connexion.h \
+        dialog.h \
         employe.h \
-        mainwindow.h
+        mainwindow.h \
+        seconddialog.h
 
 FORMS += \
-        mainwindow.ui
+        dialog.ui \
+        mainwindow.ui \
+        seconddialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -45,3 +54,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES +=
+
+RESOURCES += \
+
+

@@ -27,7 +27,7 @@ public:
     QLineEdit *password;
     QPushButton *connecter;
     QPushButton *compte;
-    QPushButton *pushButton_3;
+    QPushButton *mdpo;
     QLabel *label_4;
     QLabel *label_5;
     QLabel *label_2;
@@ -117,15 +117,15 @@ public:
         compte = new QPushButton(Dialog);
         compte->setObjectName(QString::fromUtf8("compte"));
         compte->setGeometry(QRect(170, 690, 421, 51));
-        pushButton_3 = new QPushButton(Dialog);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setGeometry(QRect(440, 560, 171, 41));
-        pushButton_3->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 168);\n"
+        mdpo = new QPushButton(Dialog);
+        mdpo->setObjectName(QString::fromUtf8("mdpo"));
+        mdpo->setGeometry(QRect(440, 560, 171, 41));
+        mdpo->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 168);\n"
 "border:none;"));
-        pushButton_3->setFlat(true);
+        mdpo->setFlat(true);
         label_4 = new QLabel(Dialog);
         label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(170, 640, 251, 41));
+        label_4->setGeometry(QRect(170, 640, 291, 41));
         label_5 = new QLabel(Dialog);
         label_5->setObjectName(QString::fromUtf8("label_5"));
         label_5->setGeometry(QRect(170, 340, 31, 51));
@@ -140,7 +140,7 @@ public:
         label_2->setGeometry(QRect(170, 459, 421, 61));
         label_2->raise();
         label_4->raise();
-        pushButton_3->raise();
+        mdpo->raise();
         label_5->raise();
         label->raise();
         email->raise();
@@ -158,13 +158,13 @@ public:
     {
         Dialog->setWindowTitle(QCoreApplication::translate("Dialog", "Dialog", nullptr));
         label->setText(QString());
-        email->setPlaceholderText(QCoreApplication::translate("Dialog", "Identifiant", nullptr));
+        email->setPlaceholderText(QCoreApplication::translate("Dialog", "identifiant", nullptr));
         label_3->setText(QString());
         password->setPlaceholderText(QCoreApplication::translate("Dialog", "password", nullptr));
         connecter->setText(QCoreApplication::translate("Dialog", "Se Connecter", nullptr));
-        compte->setText(QCoreApplication::translate("Dialog", "Cree un compte", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("Dialog", "mot de passe oublier ?", nullptr));
-        label_4->setText(QCoreApplication::translate("Dialog", "vous n'avez pas un compte ?", nullptr));
+        compte->setText(QCoreApplication::translate("Dialog", "Connexion facile en tant que Client", nullptr));
+        mdpo->setText(QCoreApplication::translate("Dialog", "mot de passe oublier ?", nullptr));
+        label_4->setText(QCoreApplication::translate("Dialog", "vous pouvez connect en tant que client :", nullptr));
         label_5->setText(QString());
         label_2->setText(QString());
     } // retranslateUi

@@ -19,6 +19,11 @@ class Dialog : public QDialog
 public:
     explicit Dialog(QWidget *parent = nullptr);
     ~Dialog();
+    QString getEmployeName();
+    void getemployeemail(QString &email);
+     QString getEmail() const;
+
+
 
 
 private:
@@ -28,6 +33,9 @@ private:
     void on_creerUnCompteButton_clicked();
     void on_loginButton_clicked();
     void resetResultLabel();
+    void connecttoapp();
+
+
 
 
 

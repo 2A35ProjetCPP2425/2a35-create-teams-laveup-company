@@ -46,7 +46,7 @@
 
 
 
-commande::commande(int id , int telephone , int qte_couette, int qte_tapis, QString nom , QString prenom, QString adresse)
+commande::commande(int id , int telephone , int qte_couette, int qte_tapis, int etat , QString prenom, QString adresse, QString nom)
 {
     this->id=id;
     this->telephone=telephone;
@@ -55,6 +55,7 @@ commande::commande(int id , int telephone , int qte_couette, int qte_tapis, QStr
     this->nom=nom;
     this->prenom=prenom;
     this->adresse=adresse;
+    this->etat=etat;
    /* this->prix_tapis=prix_tapis;
     this->prix_couette=prix_couette;*/
 }
@@ -65,14 +66,14 @@ bool commande::ajouter()
     QString res1 = QString::number(telephone);
     QString res2 = QString::number(qte_couette);
     QString res3 = QString::number(qte_tapis);
-
-    query.prepare("INSERT INTO COMMANDE (IDCOMMANDE,NOM,PRENOM,ADRESSE,TELEPHONE,PRIXCOUETTE,PRIXTAPIS,QUANTITEOUETTE,QTANTITETAPIS) "
-                  "VALUES (:id ,:nom , :prenom,:adresse,:telephone, NULL ,NULL,:qte_couette , :qte_tapis  )");
+    QString res4 = QString::number(etat);
+    query.prepare("INSERT INTO COMMANDE (IDCOMMANDE,NOM,PRENOM,ADRESSE,TELEPHONE,PRIXCOUETTE,PRIXTAPIS,QUANTITEOUETTE,QTANTITETAPIS,ETAT) "
+                  "VALUES (:id ,:nom , :prenom,:adresse,:telephone, NULL ,NULL,:qte_couette , :qte_tapis,:etat  )");
     query.bindValue(":id",res);
     query.bindValue(":nom",nom);
     query.bindValue(":prenom",prenom);
     query.bindValue(":adresse",adresse);
-
+    query.bindValue(":etat",res4);
     query.bindValue(":telephone",res1);
     query.bindValue(":qte_couette",res2);
     query.bindValue(":qte_tapis",res3);

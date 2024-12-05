@@ -23,7 +23,7 @@ bool achat::ajouter()
     int prix_tapis = 60;
 
     // Calculer le prix total
-    int prix_total = (qt_couette * prix_couette) + (qt_tapis * prix_tapis);
+   int prix_total = (qt_couette * prix_couette) + (qt_tapis * prix_tapis);
 
     // Préparer la requête SQL
     query.prepare("INSERT INTO ACHAT (IDA, NOM, PRENOM, QT_COUETTE, QT_TAPIS, PRIX_COUETTE, PRIX_TAPIS, PRIXTOTAL) "

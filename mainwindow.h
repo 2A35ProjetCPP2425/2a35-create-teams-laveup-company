@@ -3,8 +3,10 @@
 
 #include <QMainWindow>
 #include "achat.h"
+#include "arduino.h"
 #include "commande.h"
 #include <QSqlQueryModel>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -41,13 +43,29 @@ private slots:
    void afficherAchats();
 
    void on_PDF_clicked();
+   /*void handleArduinoData();*/
+   /*void update_fire_detection();*/
+   void checkArduinoData();
+
 
 private:
     Ui::MainWindow *ui;
     void hideAllTabWidgets();  // Function to hide all tab widgets
     commande cmd;
     achat ach;
-    QSqlQueryModel *model_;  // Utiliser QSqlQueryModel ici
+    Arduino arduino;
+    QTimer *timer;
+    QStandardItemModel *model_;
+    QSqlQueryModel *sqlModel;
+     QSqlQueryModel *modfl;
+     QStandardItemModel *modl = new QStandardItemModel(this);
+     bool fireAlertShown;
+     void handleFireDetected(bool fire);
+     void updateFireStateInDatabase(int state);
+
+
+
+    /* QSqlQueryModel *model_;*/
 
 
 };

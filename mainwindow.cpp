@@ -29,11 +29,14 @@
 #include <QDebug>
 #include <QPixmap>
 #include <QPdfWriter>
-
+#include <QtSerialPort/QSerialPort>
+#include <QtSerialPort/QSerialPortInfo>
+#include <QDebug>
+#include <QTimer>
 MainWindow::MainWindow(QWidget *parent)
     :QMainWindow(parent)
     ,ui(new Ui::MainWindow)
-
+    ,fireAlertShown(false)
 {
     ui->setupUi(this);
      ui->tableView_2->setModel(ach.afficher());
@@ -76,9 +79,18 @@ MainWindow::MainWindow(QWidget *parent)
       connect(ui->trieButton, &QPushButton::clicked, this, &MainWindow::on_trieButton_clicked);
        connect(ui->statButton, &QPushButton::clicked, this, &MainWindow::on_statButton_clicked);
 
+       timer = new QTimer(this);
+
+           if (arduino.connectToArduino()) {
+               connect(timer, &QTimer::timeout, this, &MainWindow::checkArduinoData);
+               timer->start(500);
+               qDebug() << "Arduino connected.";
+           } else {
+               QMessageBox::warning(this, "Erreur de Connexion", "Impossible de connecter à l'Arduino.");
+           }
+       }
 
 
-                  }
 
 
 
@@ -166,36 +178,30 @@ void MainWindow::showMetierClient2()
     ui->metier_client2->setVisible(true);  // Show Metier Client2 tab widget
 }
 
-void MainWindow::on_ok_2_clicked()
-{
+void MainWindow::on_ok_2_clicked() {
+    int id = ui->id_2->text().toInt();
+    QString nom = ui->nom_3->text();
+    QString prenom = ui->prenom_3->text();
+    int telephone = ui->telephone_2->text().toInt();
+    QString adresse = ui->adresse_2->text();
+    int qte_couette = ui->qte_couette_2->text().toInt();
+    int qte_tapis = ui->qte_tapis_2->text().toInt();
+    int etat = ui->etat_2->text().toInt(); // Assurez-vous que 'etat_2' est correct et de type adéquat
 
-    int id=ui->id_2->text().toInt();
-    QString nom=ui->nom_3->text();
-    QString prenom=ui->prenom_3->text();
-    int telephone=ui->telephone_2->text().toInt();
-    QString adresse=ui->adresse_2->text();
-    int qte_couette=ui->qte_couette_2->text().toInt();
-    int qte_tapis=ui->qte_tapis_2->text().toInt();
-    /*float prix_tapis = ui->prix_tapis->text().toFloat();
-    float prix_couette = ui->prix_couette->text().toFloat();*/
+    // Appel correct du constructeur
+    commande C(id, telephone, qte_couette, qte_tapis, etat, nom, prenom, adresse);
 
+    bool test = C.ajouter();
 
-    commande C( id ,telephone ,qte_couette,qte_tapis, nom ,prenom, adresse);
-    bool test=C.ajouter();
-
-    if(test)
-    {
+    if(test) {
         ui->tableView->setModel(cmd.afficher());
-        QMessageBox::information(nullptr, QObject::tr("ok"),
-                    QObject::tr("Ajout successful.\n"
-                                "Click Cancel to exit."), QMessageBox::Cancel);
+        QMessageBox::information(nullptr, QObject::tr("ok"), QObject::tr("Ajout réussi.\n" "Cliquez sur Annuler pour quitter."), QMessageBox::Cancel);
+    } else {
+        QMessageBox::critical(nullptr, QObject::tr("pas ok"), QObject::tr("Ajout failed.\n" "Cliquez sur Annuler pour quitter."), QMessageBox::Cancel);
+    }
+}
 
-}
-    else
-        QMessageBox::critical(nullptr, QObject::tr("not ok"),
-                    QObject::tr("Ajout failed.\n"
-                                "Click Cancel to exit."), QMessageBox::Cancel);
-}
+
 
 void MainWindow::on_pushButton_supprimer_2_clicked()
 {
@@ -331,7 +337,8 @@ void MainWindow::ajoutachat()
     // Ajouter l'achat à la base de données
     if (a.ajouter()) {
          ui->tableView_2->setModel(ach.afficher());
-        QMessageBox::information(this, "Succès", "Achat ajouté avec succès !");
+
+     QMessageBox::information(this, "Succès", "Achat ajouté avec succès !");
     } else {
         QMessageBox::critical(this, "Erreur", "Échec de l'ajout de l'achat. Vérifiez la base de données.");
     }
@@ -343,4 +350,43 @@ void MainWindow::afficherAchats()
 
 }
 
+void MainWindow::checkArduinoData() {
+    QString data = arduino.readData();
+
+    if (data.isEmpty()) {
+        qDebug() << "No data received or only whitespace.";
+    } else {
+        qDebug() << "Received data:" << data;
+
+        if (data.trimmed().compare("FIRE_DETECTED", Qt::CaseSensitive) == 0 && !fireAlertShown) {
+            fireAlertShown = true;
+            handleFireDetected(true);
+        } else if (data.trimmed().compare("NO_FIRE", Qt::CaseSensitive) == 0 && fireAlertShown) {
+            handleFireDetected(false);
+        }
+    }
+}
+
+void MainWindow::handleFireDetected(bool fire) {
+    if (fire) {
+        QMessageBox::critical(this, "Alerte Incendie", "Un feu a été détecté dans la dépot!");
+        updateFireStateInDatabase(1);
+        QTimer::singleShot(10000, this, [this] { fireAlertShown = false; });
+    } else {
+        qDebug() << "Le feu est éteint.";
+        updateFireStateInDatabase(0);
+    }
+}
+
+
+void MainWindow::updateFireStateInDatabase(int state) {
+    QSqlQuery query;
+    query.prepare("UPDATE Commande SET etat = :etat WHERE  = 1");
+    query.bindValue(":etat", state);
+    if (!query.exec()) {
+        qDebug() << "Error updating fire state in database: " << query.lastError();
+    } else {
+        qDebug() << "Fire state updated in database to: " << state;
+    }
+}
 

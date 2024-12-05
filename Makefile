@@ -335,6 +335,7 @@ Makefile: projet_interface.pro C:/Qt/Qt6.3.0/6.3.0/mingw_64/mkspecs/win32-g++/qm
 		C:/Qt/Qt6.3.0/6.3.0/mingw_64/lib/Qt6Widgets.prl \
 		C:/Qt/Qt6.3.0/6.3.0/mingw_64/lib/Qt6Gui.prl \
 		C:/Qt/Qt6.3.0/6.3.0/mingw_64/lib/Qt6Sql.prl \
+		C:/Qt/Qt6.3.0/6.3.0/mingw_64/lib/Qt6SerialPort.prl \
 		C:/Qt/Qt6.3.0/6.3.0/mingw_64/lib/Qt6Core.prl \
 		C:/Qt/Qt6.3.0/6.3.0/mingw_64/lib/Qt6EntryPoint.prl \
 		C:/Qt/Qt6.3.0/6.3.0/mingw_64/mkspecs/features/build_pass.prf
@@ -604,6 +605,7 @@ C:/Qt/Qt6.3.0/6.3.0/mingw_64/lib/Qt6PrintSupport.prl:
 C:/Qt/Qt6.3.0/6.3.0/mingw_64/lib/Qt6Widgets.prl:
 C:/Qt/Qt6.3.0/6.3.0/mingw_64/lib/Qt6Gui.prl:
 C:/Qt/Qt6.3.0/6.3.0/mingw_64/lib/Qt6Sql.prl:
+C:/Qt/Qt6.3.0/6.3.0/mingw_64/lib/Qt6SerialPort.prl:
 C:/Qt/Qt6.3.0/6.3.0/mingw_64/lib/Qt6Core.prl:
 C:/Qt/Qt6.3.0/6.3.0/mingw_64/lib/Qt6EntryPoint.prl:
 C:/Qt/Qt6.3.0/6.3.0/mingw_64/mkspecs/features/build_pass.prf:

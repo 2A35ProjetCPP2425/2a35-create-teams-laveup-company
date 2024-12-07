@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "employe.h"
+#include "qserialport.h"
 #include <QDialog> // For the login dialog
 
 
@@ -43,10 +44,14 @@ private slots:
 
 
 
+
 private:
     Ui::MainWindow *ui;
     QString userEmail;
     Employe emp;
+    QSerialPort *arduino;  // Serial port for Arduino
+    QString arduinoData;   // Data received from Arduino
+
 
 
 
@@ -85,6 +90,7 @@ private:
     void onclearcongebuttonhistorique();
     void updateSearchResults(const QString &searchText);
     void filterEmployees(const QString &searchText);
+    void sendGreenLEDSignal();
 
 
 

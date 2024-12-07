@@ -142,7 +142,7 @@ QLabel {
    <property name="geometry">
     <rect>
      <x>170</x>
-     <y>510</y>
+     <y>530</y>
      <width>421</width>
      <height>51</height>
     </rect>
@@ -168,7 +168,7 @@ QLabel {
    <property name="geometry">
     <rect>
      <x>440</x>
-     <y>560</y>
+     <y>570</y>
      <width>171</width>
      <height>41</height>
     </rect>
@@ -234,7 +234,7 @@ border:none;</string>
      <x>170</x>
      <y>459</y>
      <width>421</width>
-     <height>61</height>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">

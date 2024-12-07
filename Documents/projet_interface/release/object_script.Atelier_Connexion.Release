@@ -1,11 +1,11 @@
-release/buttondelegate.o
+release/arduino.o
 release/connexion.o
 release/dialog.o
 release/employe.o
 release/main.o
 release/mainwindow.o
 release/seconddialog.o
-release/moc_buttondelegate.o
+release/moc_arduino.o
 release/moc_dialog.o
 release/moc_mainwindow.o
 release/moc_seconddialog.o

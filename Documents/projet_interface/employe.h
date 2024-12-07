@@ -53,6 +53,9 @@ public:
     QString getraison(){return raison;}
     QString getraison_counge(){return raison_counge;}
 
+    QString getEmpUid(const QString &email);
+
+
 
 
 

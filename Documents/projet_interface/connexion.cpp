@@ -1,5 +1,4 @@
 #include "connexion.h"
-#include "qstring.h"
 
 Connection::Connection()
 {

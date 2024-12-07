@@ -1,7 +1,9 @@
 #include "mainwindow.h"
 #include <QSqlError>
 #include <QMessageBox>
+#include "dialog.h"
 #include "employe.h"
+#include "qthread.h"
 #include "ui_mainwindow.h"
 #include <QRegularExpression>
 #include <QRegularExpressionValidator>
@@ -24,6 +26,10 @@ MainWindow::MainWindow(const QString &email, QWidget *parent) :
     userEmail(email)
 {
     ui->setupUi(this);
+
+
+
+
     setupComboBoxes();
     privilege();
     displayGenderStatistics();
@@ -31,6 +37,7 @@ MainWindow::MainWindow(const QString &email, QWidget *parent) :
     onUpdateTypeCongeClicked();
     emp.updateEmployeStatus();
     displayCongeStats();
+
 
 
 
@@ -818,7 +825,7 @@ void MainWindow::setupComboBoxes()
 void MainWindow::on_addEmployeeButton_clicked()
 {
 
-
+    Dialog d;
     // Validate 'nom'
     QRegularExpression nameRegex("^[A-Za-z ]*$"); // Regex for only letters and spaces
     QRegularExpressionValidator nameValidator(nameRegex);

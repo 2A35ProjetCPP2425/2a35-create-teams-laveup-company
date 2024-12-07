@@ -867,5 +867,29 @@ QMap<QString, QPair<int, int>> Employe::getCongeStatsByMonth() {
 }
 
 
-#include <tuple>
+QString Employe::getEmpUid(const QString &email) {
+    // Assuming you have a QSqlDatabase object set up and connected already
+    QSqlQuery query;
+
+    // Prepare the query to fetch the UID for the given email (identifiant)
+    query.prepare("SELECT UID_EMP FROM EMPELOYE WHERE id_p = :email");
+    query.bindValue(":email", email);  // Bind the input email parameter
+
+    // Execute the query
+    if (!query.exec()) {
+        // If there's an error, display it (optional)
+        QMessageBox::critical(nullptr, "Database Error", "Failed to retrieve employee UID: " + query.lastError().text());
+        return "";  // Return an empty string if the query failed
+    }
+
+    // If a record is found, return the UID
+    if (query.next()) {
+        QString uid = query.value(0).toString();  // Retrieve the UID from the first column
+        return uid;  // Return the UID as a string
+    }
+
+    // If no record found, return an empty string
+    return "";
+}
+
 

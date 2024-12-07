@@ -113,13 +113,13 @@ public:
         password->setCursorMoveStyle(Qt::LogicalMoveStyle);
         connecter = new QPushButton(Dialog);
         connecter->setObjectName(QString::fromUtf8("connecter"));
-        connecter->setGeometry(QRect(170, 510, 421, 51));
+        connecter->setGeometry(QRect(170, 530, 421, 51));
         compte = new QPushButton(Dialog);
         compte->setObjectName(QString::fromUtf8("compte"));
         compte->setGeometry(QRect(170, 690, 421, 51));
         mdpo = new QPushButton(Dialog);
         mdpo->setObjectName(QString::fromUtf8("mdpo"));
-        mdpo->setGeometry(QRect(440, 560, 171, 41));
+        mdpo->setGeometry(QRect(440, 570, 171, 41));
         mdpo->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 168);\n"
 "border:none;"));
         mdpo->setFlat(true);
@@ -137,7 +137,7 @@ public:
         label_5->setPixmap(QPixmap(QString::fromUtf8("../../Downloads/user (1).png")));
         label_2 = new QLabel(Dialog);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(170, 459, 421, 61));
+        label_2->setGeometry(QRect(170, 459, 421, 71));
         label_2->raise();
         label_4->raise();
         mdpo->raise();

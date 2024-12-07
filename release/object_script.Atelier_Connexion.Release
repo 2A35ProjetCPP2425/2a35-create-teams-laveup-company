@@ -1,0 +1,14 @@
+release/main.o
+release/mainwindow.o
+release/client.o
+release/.o
+release/Ensure.o
+release/this.o
+release/is.o
+release/included.o
+release/client.o
+release/main.o
+release/mainwindow.o
+release/connection.o
+release/moc_client.o
+release/moc_mainwindow.o

@@ -1,0 +1,14 @@
+debug/main.o
+debug/mainwindow.o
+debug/client.o
+debug/.o
+debug/Ensure.o
+debug/this.o
+debug/is.o
+debug/included.o
+debug/client.o
+debug/main.o
+debug/mainwindow.o
+debug/connection.o
+debug/moc_client.o
+debug/moc_mainwindow.o

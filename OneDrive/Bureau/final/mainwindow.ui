@@ -1,0 +1,2219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1762</width>
+    <height>759</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>1791</width>
+      <height>748</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_12">
+     <item>
+      <widget class="QWidget" name="widjet_iconsonly" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:#0A0F27;</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <property name="topMargin">
+         <number>30</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>13</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>../../Downloads/icons8-cleaning-50 (3).png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="spacing">
+           <number>27</number>
+          </property>
+          <property name="topMargin">
+           <number>20</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="pushButton_9">
+            <property name="styleSheet">
+             <string notr="true">QPushButton:checked{
+border :1px solid #FCF6F3;
+
+
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../Downloads/icons8-client-100 (1).png</normaloff>
+              <normalon>../../Downloads/icons8-client-50 (3).png</normalon>../../Downloads/icons8-client-100 (1).png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_10">
+            <property name="styleSheet">
+             <string notr="true">QPushButton:checked{
+border :1px solid #FCF6F3;
+
+
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../Downloads/icons8-add-shopping-cart-50.png</normaloff>
+              <normalon>../../Downloads/icons8-add-shopping-cart-80 (2).png</normalon>../../Downloads/icons8-add-shopping-cart-50.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>35</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_11">
+            <property name="styleSheet">
+             <string notr="true">QPushButton:checked{
+border :1px solid #FCF6F3;
+
+
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../Downloads/icons8-article-45.png</normaloff>
+              <normalon>../../Downloads/icons8-article-64 (1).png</normalon>../../Downloads/icons8-article-45.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>27</width>
+              <height>27</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_12">
+            <property name="styleSheet">
+             <string notr="true">QPushButton:checked{
+border :1px solid #FCF6F3;
+
+
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../Downloads/icons8-client-80.png</normaloff>
+              <normalon>../../Downloads/icons8-client-80 (1).png</normalon>../../Downloads/icons8-client-80.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_13">
+            <property name="styleSheet">
+             <string notr="true">QPushButton:checked{
+border :1px solid #FCF6F3;
+
+
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../Downloads/icons8-recycling-50.png</normaloff>
+              <normalon>../../Downloads/icons8-recycling-50 (1).png</normalon>../../Downloads/icons8-recycling-50.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>312</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_14">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../Downloads/icons8-exit-50 (1).png</normaloff>
+            <normalon>../../Downloads/icons8-exit-50 (3).png</normalon>../../Downloads/icons8-exit-50 (1).png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widjt_icon_text" native="true">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+	background-color:#0A0F27;
+	color: white;
+}
+QPushButton:hover{
+
+color :  #12769E;
+}
+</string>
+       </property>
+       <property name="locale">
+        <locale language="French" country="France"/>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::InputMethodHint::ImhNone</set>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_12">
+        <property name="topMargin">
+         <number>30</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>../../Downloads/icons8-cleaning-50 (3).png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:700;&quot;&gt;laveup&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>20</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_11">
+              <item>
+               <widget class="QLabel" name="clien_icon_2">
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">padding-left : 20px;
+
+</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap>../../Downloads/icons8-client-30 (1).png</pixmap>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_3">
+                <property name="layoutDirection">
+                 <enum>Qt::LayoutDirection::RightToLeft</enum>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+height : 30px;
+border : none;
+padding-left : 80px;
+font-size: 20px;
+color : #FCF6F3;
+}
+
+
+</string>
+                </property>
+                <property name="text">
+                 <string>Client</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+                <property name="autoExclusive">
+                 <bool>true</bool>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_2">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="pushButton">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+height : 30px;
+border : none;
+padding-left : 40px;
+}
+QPushButton:hover{
+
+color : #12769E;
+
+};</string>
+                 </property>
+                 <property name="text">
+                  <string>metier-client1</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_2">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+height : 30px;
+border : none;
+padding-left : 40px;
+
+}
+QPushButton:hover{
+
+color : #12769E;
+
+};
+
+
+</string>
+                 </property>
+                 <property name="text">
+                  <string>metier client 2</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="commande_icon_2">
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">padding-left : 15px;
+
+</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap>../../Downloads/icons8-add-shopping-cart-30 (1).png</pixmap>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_4">
+                <property name="layoutDirection">
+                 <enum>Qt::LayoutDirection::RightToLeft</enum>
+                </property>
+                <property name="autoFillBackground">
+                 <bool>false</bool>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+height : 30px;
+border : none;
+padding-left : 35px;
+font-size: 18px;
+
+}
+
+
+</string>
+                </property>
+                <property name="text">
+                 <string>Commande</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_3">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="pushButton_21">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+height : 30px;
+border : none;
+padding-left : 50px;
+
+}
+QPushButton:hover{
+
+color : #12769E;
+
+};</string>
+                 </property>
+                 <property name="text">
+                  <string>metier-comm 1</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_22">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+height : 30px;
+border : none;
+padding-left : 50px;
+
+}
+QPushButton:hover{
+
+color : #12769E;
+
+};</string>
+                 </property>
+                 <property name="text">
+                  <string>metier-comm 2</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QLabel" name="commande_icon_3">
+                <property name="maximumSize">
+                 <size>
+                  <width>50</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">padding-left : 15px;
+
+</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap>../../Downloads/icons8-article-30 (1).png</pixmap>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_5">
+                <property name="layoutDirection">
+                 <enum>Qt::LayoutDirection::RightToLeft</enum>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+height : 30px;
+border : none;
+padding-left : 75px;
+font-size: 19px
+}
+
+
+</string>
+                </property>
+                <property name="text">
+                 <string>Article</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_5">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_26">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="pushButton_25">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+height : 30px;
+border : none;
+padding-left : 40px;
+
+}
+QPushButton:hover{
+
+color : #12769E;
+
+};</string>
+                 </property>
+                 <property name="text">
+                  <string>metier-artic1</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_26">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+padding-left : 40px;
+height : 30px;
+border : none;
+}
+QPushButton:hover{
+
+color : #12769E;
+
+};</string>
+                 </property>
+                 <property name="text">
+                  <string>metier-artic2</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <item>
+               <widget class="QLabel" name="article_icon_4">
+                <property name="styleSheet">
+                 <string notr="true">padding-left : 20px;
+
+</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap>../../Downloads/icons8-client-30 (2).png</pixmap>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_6">
+                <property name="layoutDirection">
+                 <enum>Qt::LayoutDirection::RightToLeft</enum>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+height : 30px;
+border : none;
+padding-left : 58px;
+font-size: 18px
+
+}
+
+
+</string>
+                </property>
+                <property name="text">
+                 <string>Personnel</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_6">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_27">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="pushButton_23">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+height : 30px;
+border : none;
+padding-left : 10px;
+
+}
+QPushButton:hover{
+
+color : #12769E;
+
+};</string>
+                 </property>
+                 <property name="text">
+                  <string>Aceuille</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_24">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+height : 30px;
+border : none;
+padding-left : 66px;
+
+}
+QPushButton:hover{
+
+color : #12769E;
+
+};</string>
+                 </property>
+                 <property name="text">
+                  <string>Demande-congé</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_9">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_10">
+              <item>
+               <widget class="QLabel" name="matier_icon">
+                <property name="styleSheet">
+                 <string notr="true">
+padding-left : 20px;
+
+</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap>../../Downloads/icons8-recycling-30.png</pixmap>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_7">
+                <property name="layoutDirection">
+                 <enum>Qt::LayoutDirection::RightToLeft</enum>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+height : 30px;
+border : none;
+padding-left : 70px;
+font-size: 19px
+
+}
+
+
+
+
+</string>
+                </property>
+                <property name="text">
+                 <string>matiere</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_4">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_25">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="pushButton_27">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+height : 30px;
+border : none;
+padding-left : 40px;
+
+}
+QPushButton:hover{
+
+color : #12769E;
+
+};</string>
+                 </property>
+                 <property name="text">
+                  <string>metier-matie1</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_28">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+height : 30px;
+border : none;
+padding-left : 40px;
+
+}
+QPushButton:hover{
+
+color : #12769E;
+
+};</string>
+                 </property>
+                 <property name="text">
+                  <string>metier-matie2</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>16</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="pushButton_39">
+            <property name="styleSheet">
+             <string notr="true">QPushButton:hover { qproperty-icon: url(:C:\Users\GIGABYTE\Downloads\icons8-exit-50 (2).png); }</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../Downloads/icons8-exit-50 (1).png</normaloff>
+              <normalon>../../Downloads/icons8-exit-60.png</normalon>../../Downloads/icons8-exit-50 (1).png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>60</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_8">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+height : 30px;
+border : none;
+padding-right: 20px;
+font-size:20px;
+color :red;
+
+}
+</string>
+            </property>
+            <property name="text">
+             <string>déconnecter</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+       <zorder></zorder>
+       <zorder></zorder>
+       <zorder>verticalSpacer_5</zorder>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QWidget" name="widget" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QPushButton" name="pushButton_15">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../../Downloads/icons8-menu-50 (2).png</normaloff>
+                <normalon>../../Downloads/icons8-menu-50 (3).png</normalon>../../Downloads/icons8-menu-50 (2).png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>438</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLineEdit" name="lineEdit">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+width: 200px;
+height: 25px;
+margin : 5px;
+background-color: white;
+font-family: 'Raleway', sans-serif;
+border-radius: 5px;
+}
+QLineEdit:hover{
+background-color: #ddd;
+ color: black;
+
+}
+</string>
+              </property>
+              <property name="maxLength">
+               <number>9</number>
+              </property>
+              <property name="placeholderText">
+               <string>Search...</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_16">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../../Downloads/icons8-search-50.png</normaloff>
+                <normalon>../../Downloads/icons8-search-50 (1).png</normalon>../../Downloads/icons8-search-50.png</iconset>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(252, 246, 243);</string>
+         </property>
+         <property name="currentIndex">
+          <number>4</number>
+         </property>
+         <widget class="QWidget" name="tab_3">
+          <attribute name="title">
+           <string>Consulter</string>
+          </attribute>
+          <widget class="QLineEdit" name="lineEdit_nom">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>180</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="placeholderText">
+            <string>Nom</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_134">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>100</y>
+             <width>161</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>true</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>ajout employé</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_135">
+           <property name="geometry">
+            <rect>
+             <x>329</x>
+             <y>40</y>
+             <width>371</width>
+             <height>71</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>28</pointsize>
+             <italic>true</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Consulter&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_136">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>130</y>
+             <width>61</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Trier par :</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="searchLineEdit">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>190</y>
+             <width>191</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="placeholderText">
+            <string>identifiant</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_137">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>140</y>
+             <width>131</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>recherche employé :</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_TEL">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>340</y>
+             <width>201</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="placeholderText">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_138">
+           <property name="geometry">
+            <rect>
+             <x>410</x>
+             <y>540</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Supprimer un emplyé :</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_139">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>220</y>
+             <width>161</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>id</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_prenom">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>180</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="placeholderText">
+            <string>prenom</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_140">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>440</y>
+             <width>231</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>mail</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="searchButton">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>220</y>
+             <width>91</width>
+             <height>29</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Valider</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_141">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>370</y>
+             <width>131</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>adresse</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_142">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>150</y>
+             <width>171</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>nom &amp; prenom :</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_143">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>280</y>
+             <width>131</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>telephone</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_10">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>510</y>
+             <width>141</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>confirmation</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_ADRESSE">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>400</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="placeholderText">
+            <string>salaire</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_MAIL">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>460</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="placeholderText">
+            <string>salaire</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_ID">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>240</y>
+             <width>201</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="placeholderText">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_trier_par_id">
+           <property name="geometry">
+            <rect>
+             <x>550</x>
+             <y>180</y>
+             <width>91</width>
+             <height>29</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Valider</string>
+           </property>
+          </widget>
+          <widget class="QTableView" name="tableView_2">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>250</y>
+             <width>611</width>
+             <height>281</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_IDS">
+           <property name="geometry">
+            <rect>
+             <x>410</x>
+             <y>560</y>
+             <width>191</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="placeholderText">
+            <string>identifiant</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_supprimer">
+           <property name="geometry">
+            <rect>
+             <x>410</x>
+             <y>590</y>
+             <width>91</width>
+             <height>29</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Valider</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_generatePdf">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>540</y>
+             <width>131</width>
+             <height>29</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Exportation PDF</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_ajouter">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>540</y>
+             <width>91</width>
+             <height>29</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Valider</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_4">
+          <attribute name="title">
+           <string>modification</string>
+          </attribute>
+          <widget class="QLabel" name="label_124">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>110</y>
+             <width>161</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <italic>true</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>ajout employé</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_133">
+           <property name="geometry">
+            <rect>
+             <x>329</x>
+             <y>50</y>
+             <width>371</width>
+             <height>71</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>28</pointsize>
+             <italic>true</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Consulter&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_126">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>230</y>
+             <width>161</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>date d'emboche :</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_129">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>450</y>
+             <width>231</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Cv :</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_127">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>380</y>
+             <width>131</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>salaire :</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_125">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>160</y>
+             <width>171</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>nom &amp; prenom :</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_128">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>290</y>
+             <width>131</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Poste :</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_9">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>520</y>
+             <width>141</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>confirmation</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_nom1">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>190</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="placeholderText">
+            <string>Nom</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_prenom1">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>190</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="placeholderText">
+            <string>prenom</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_ID1">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>250</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="placeholderText">
+            <string>Nom</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_ADRESSE1">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>340</y>
+             <width>201</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="placeholderText">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_TEL1">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>420</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="placeholderText">
+            <string>salaire</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_MAIL_2">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>480</y>
+             <width>113</width>
+             <height>28</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_modifier">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>550</y>
+             <width>171</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>modifier</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_5">
+          <attribute name="title">
+           <string>statistique</string>
+          </attribute>
+          <widget class="QGraphicsView" name="pie">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>631</width>
+             <height>531</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QGraphicsView" name="pie_2">
+           <property name="geometry">
+            <rect>
+             <x>670</x>
+             <y>20</y>
+             <width>711</width>
+             <height>531</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab">
+          <attribute name="title">
+           <string>alert et notification</string>
+          </attribute>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>100</y>
+             <width>261</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>donner moi le numero de telephone </string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="phoneNumberLineEdit">
+           <property name="geometry">
+            <rect>
+             <x>390</x>
+             <y>100</y>
+             <width>251</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>240</y>
+             <width>261</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>le text que voulez lenvoyer</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="sendSMSButton">
+           <property name="geometry">
+            <rect>
+             <x>360</x>
+             <y>460</y>
+             <width>83</width>
+             <height>29</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>PushButton</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="eventComboBox">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>300</y>
+             <width>701</width>
+             <height>28</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_2">
+          <attribute name="title">
+           <string>pt_fidelite</string>
+          </attribute>
+          <widget class="QTableView" name="tableView_3">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>60</y>
+             <width>961</width>
+             <height>371</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btnCalculateFidelity">
+           <property name="geometry">
+            <rect>
+             <x>480</x>
+             <y>460</y>
+             <width>83</width>
+             <height>29</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>PushButton</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_14</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>88</x>
+     <y>745</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>72</x>
+     <y>767</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_15</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>widjet_iconsonly</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>398</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>85</x>
+     <y>33</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_14</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>63</x>
+     <y>745</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>58</x>
+     <y>767</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_15</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>widjt_icon_text</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>380</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>242</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButton_9</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>148</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>33</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButton_10</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>234</x>
+     <y>265</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>65</x>
+     <y>224</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButton_11</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>222</x>
+     <y>374</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>65</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButton_12</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>235</x>
+     <y>489</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>52</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButton_13</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>214</x>
+     <y>579</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>61</x>
+     <y>412</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_39</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>163</x>
+     <y>722</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>881</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>261</x>
+     <y>712</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>266</x>
+     <y>869</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>widjt_icon_text</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>82</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>147</x>
+     <y>117</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>widjt_icon_text</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>52</x>
+     <y>216</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>118</x>
+     <y>246</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_11</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>widjt_icon_text</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>77</x>
+     <y>290</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>115</x>
+     <y>321</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_12</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>widjt_icon_text</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>348</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>119</x>
+     <y>459</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_13</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>widjt_icon_text</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>429</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>116</x>
+     <y>582</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
